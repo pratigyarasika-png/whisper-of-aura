@@ -141,7 +141,7 @@ export async function parseXlsxFile(file: File): Promise<Dataset[]> {
   const buffer = await file.arrayBuffer();
   const book = XLSX.read(buffer, { type: "array" });
   return book.SheetNames.map((sheetName) => {
-    const sheet = book.Sheets[sheetName];
+    const sheet = book.Sheets[sheetName]!;
     const matrix = XLSX.utils.sheet_to_json<string[]>(sheet, {
       header: 1,
       raw: false,
