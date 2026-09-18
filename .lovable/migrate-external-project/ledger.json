@@ -1,0 +1,30 @@
+[
+  {
+    "capability": "Frontend app (home, search, write routes + full component/UI library)",
+    "source": "github:pratigyarasika-png/aura-whisperer src/",
+    "outcome": "migrated",
+    "status": "verified",
+    "next_action": null
+  },
+  {
+    "capability": "AI API routes (analyze, assist, generate-image, transcribe) via Lovable AI gateway",
+    "source": "src/routes/api/* using LOVABLE_API_KEY",
+    "outcome": "migrated",
+    "status": "implemented",
+    "next_action": "Verify live AI calls in preview; key is platform-provided."
+  },
+  {
+    "capability": "Database / records",
+    "source": "none detected",
+    "outcome": "absent",
+    "status": "verified",
+    "next_action": null
+  },
+  {
+    "capability": "Authentication",
+    "source": "none detected (UI shows a sign-in hint only, no provider)",
+    "outcome": "absent",
+    "status": "verified",
+    "next_action": "Ask user if they want login added via Lovable Cloud."
+  }
+]
